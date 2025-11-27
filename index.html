@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: "Poppins", sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.buttons{
+    width:500px ;
+    max-width: 600px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+.imgkl {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.imgkl img {
+   height: 250px;
+    border-radius: 20px;
+}
+
+.imgkl h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.sound1,.sound2,.sound3 {
+    background: #ffffff;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    background: #f0f0f0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e3e3e3;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 14px;
+    }
+}
+
+</style>
+<body>
+    <div class="buttons">
+        <div class="imgkl">
+            
+            <img src="./Снимок экрана 2025-11-27 221519.png" alt="">
+            <h3>3 трека</h3>
+        </div>
+        
+        <div class="sound1">
+            <h2>Кенеш Тобу-Аярым</h2>
+            <button id="one">▶play</button>
+            <button id="ones">⏸ pause</button>
+        </div>
+        <div class="sound2"> 
+            <h2>Кенеш Тобу -Кечирип кой </h2>
+            <button id="two">▶play</button>
+            <button id="twos">⏸ pause</button>
+        </div>
+    <div class="sound3"> 
+        <h2>Кенеш Тобу-Ханышам</h2>
+        <button id="three">▶play</button>
+        <button id="threes">⏸ pause</button>
+    </div>
+    </div>
+    <!-- <input type="text" id="input"> -->
+     
+    <script src="./script.js"></script>
+</body>
+</html>
